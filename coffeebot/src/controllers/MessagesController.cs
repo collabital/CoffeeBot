@@ -224,9 +224,6 @@ namespace Microsoft.Teams.TemplateBotCSharp
             {
                 // Handle knowing that the user is typing
             }
-            else if (message.Type == ActivityTypes.Ping)
-            {
-            }
         }
 
         /// <summary>
