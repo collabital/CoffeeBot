@@ -54,7 +54,7 @@ namespace Microsoft.Teams.TemplateBotCSharp.Dialogs
         {
             string textToTriggerThisDialog = "adaptive card";
 
-            var card = new AdaptiveCard()
+            var card = new AdaptiveCard("1.0")
             {
                 Body = new List<AdaptiveElement>()
                 {
@@ -327,7 +327,7 @@ namespace Microsoft.Teams.TemplateBotCSharp.Dialogs
                     // show action defines an inline AdaptiveCard which is shown to the user when it is clicked
                     new AdaptiveShowCardAction()
                     {
-                        Card = new AdaptiveCard()
+                        Card = new AdaptiveCard("1.0")
                         {
                             Version = "1.0",
                             Body = new List<AdaptiveElement>()
